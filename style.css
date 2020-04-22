@@ -1,5 +1,5 @@
 #keyboard {
-    width: 815px;
+    width: 824px;
     padding: 5px;
     border: 1px solid slategrey;
     border-radius: 4px;
@@ -24,7 +24,12 @@
     text-align: center;
     line-height: 32px; /* height - 2*padding = 40 - 2*4 = 32 */
 }
-
 .kb-key-backspace {
-    width: auto;
+    width: 80px;
+}
+.kb-key-tab {
+    width: 70px;
+}
+.kb-key-pipe {
+    width: 50px;
 }
