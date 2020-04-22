@@ -39,3 +39,9 @@
 .kb-key-enter {
     width: 85px;
 }
+.kb-key-left-shift {
+    width: 110px;
+}
+.kb-key-right-shift {
+    width: 65px;
+}
