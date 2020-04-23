@@ -1,5 +1,5 @@
 #keyboard {
-    width: 824px;
+    width: 848px;
     padding: 5px;
     border: 1px solid slategrey;
     border-radius: 4px;
@@ -25,28 +25,28 @@
     line-height: 32px; /* height - 2*padding = 40 - 2*4 = 32 */
 }
 .kb-key-backspace {
-    width: 80px;
+    width: 104px;
 }
 .kb-key-tab {
     width: 70px;
 }
 .kb-key-pipe {
-    width: 50px;
+    width: 74px;
 }
 .kb-key-capslock {
     width: 90px;
 }
 .kb-key-enter {
-    width: 85px;
+    width: 110px;
 }
 .kb-key-left-shift {
     width: 110px;
 }
 .kb-key-right-shift {
-    width: 65px;
+    width: 90px;
 }
 .kb-key-left-ctrl {
-    width: 65px;
+    width: 73px;
 }
 .kb-key-windows {
 
@@ -61,7 +61,7 @@
 
 }
 .kb-key-right-ctrl {
-
+    width: 65px;
 }
 .kb-key-menu {
 
