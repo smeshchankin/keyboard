@@ -25,6 +25,11 @@
     line-height: 32px; /* height - 2*padding = 40 - 2*4 = 32 */
     white-space: nowrap;
 }
+.kb-key:hover {
+    color: #fff;
+    background-color: lightgreen;
+    cursor: pointer;
+}
 .kb-key-backspace {
     width: 104px;
 }
