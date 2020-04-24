@@ -81,23 +81,7 @@
         ]
     ];
 
-    let keyboard = document.querySelector('#keyboard');
-    keysInfo.forEach(function(line) {
-        let lineNode = document.createElement('div');
-        lineNode.classList.add('kb-line');
-        line.forEach(function(key) {
-            let keyNode = document.createElement('div');
-            keyNode.classList.add('kb-key');
-            if (key.class) {
-                keyNode.classList.add(key.class);
-            }
-            keyNode.innerText = key.key;
-
-            lineNode.appendChild(keyNode);
-        });
-
-        keyboard.appendChild(lineNode);
-    });
+    generateKeyboard('#keyboard', keysInfo);
 
     let html = document.querySelector('html');
     let output = document.querySelector('#output');
@@ -107,5 +91,25 @@
     };
     html.onkeyup = function(event) {
         console.log('Key  up ' + event.key + ' = ' + event.keyCode);
+    }
+
+    function generateKeyboard(keyboardSelector, keysInfo) {
+        let keyboard = document.querySelector(keyboardSelector);
+        keysInfo.forEach(function(line) {
+            let lineNode = document.createElement('div');
+            lineNode.classList.add('kb-line');
+            line.forEach(function(key) {
+                let keyNode = document.createElement('div');
+                keyNode.classList.add('kb-key');
+                if (key.class) {
+                    keyNode.classList.add(key.class);
+                }
+                keyNode.innerText = key.key;
+    
+                lineNode.appendChild(keyNode);
+            });
+    
+            keyboard.appendChild(lineNode);
+        });
     }
 })();
